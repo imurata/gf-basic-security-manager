@@ -1,4 +1,19 @@
 # gf-basic-security-manager
+## Prerequirement
+- Make [Pivotal
+Commercial Maven Repository](https://commercial-repo.pivotal.io/) account
+- Add your account in `$HOME/.m2/settings.xml` as follows.
+```xml
+   <settings>
+       <servers>
+           <server>
+               <id>gemfire-release-repo</id>
+               <username>MY-USERNAME@example.com</username>
+               <password>MY-PLAINTEXT-PASSWORD</password>
+           </server>
+       </servers>
+   </settings>
+```
 
 ## How to build
    `mvn clean package`
